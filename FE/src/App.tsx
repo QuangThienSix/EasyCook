@@ -1,54 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import * as ROUTE from './constants/route';
+import Ranking from "pages/ranking/Ranking";
+import MyRecipe from "pages/my-recipe/MyRecipe";
+import PostsViewted from "pages/posts-viewted/PostsViewted";
+import Collection from "pages/collection/Collection";
+//import * as PAGES from './pages/index';
+
+const Home = () => {
+  return <div>home</div>
+}
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <header className="header">header</header>
+      <div className="container">
+        <div className="side-bar">
+            <Link to={ROUTE.HOME}>Trang chủ</Link>
+            <Link to={ROUTE.RANKING}>Xếp hạng thành viên </Link>
+            <Link to={ROUTE.MY_RECIPE}>Công thức của bạn</Link>
+            <Link to={ROUTE.POSTS_VIEWTED}>Bài đăng đã xem</Link>
+            <Link to={ROUTE.COLLECTION}>Bộ sưu tập</Link>
+        </div>
+        <div className="contain">
+            <Routes>
+              <Route path={ROUTE.HOME} element={<Home />}/>
+              <Route path={ROUTE.RANKING} element={<Ranking />}/>
+              <Route path={ROUTE.MY_RECIPE} element={<MyRecipe />}/>
+              <Route path={ROUTE.POSTS_VIEWTED} element={<PostsViewted />}/>
+              <Route path={ROUTE.COLLECTION} element={<Collection />}/>
+            </Routes>
+        </div>
+      </div>
     </div>
   );
 }
