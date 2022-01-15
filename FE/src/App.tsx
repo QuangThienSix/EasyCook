@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate  } from "react-router-dom";
 import * as ROUTE from './constants/route';
 import Ranking from "pages/ranking/Ranking";
 import MyRecipe from "pages/my-recipe/MyRecipe";
@@ -10,10 +10,24 @@ import Home from "pages/home/Home";
 import UploadRecipe from "pages/upload-recipe/UploadRecipe";
 import DetailsRecipe from "pages/details-recipe/DetailsRecipe";
 import * as ICON from './constants/icon';
+import Search from "pages/search/Search";
+import { NotFound } from "components/common";
 
 
 function App() {
+	const [textSearch, setTextSearch] = useState('');
+	const navigate = useNavigate ()
   
+	const handleSearch = (event: any) => {
+		setTextSearch(event.target.value);
+	}
+
+	const handleEnter = (event: any) => {
+		if(event.key === 'Enter' && textSearch !== ''){
+			navigate('/search/'+ textSearch);
+		}
+	}
+
   return (
     <div className="App">
       <header className="header">
@@ -25,7 +39,7 @@ function App() {
 		</div>
 		<div className="nav-middle flex-div">
 			<div className="search-box flex-div">
-				<input type="text" placeholder="Tìm kiếm món ăn" />
+				<input type="text" value={textSearch} onKeyPress={(event: any) => handleEnter(event)} onChange={(event: any) => handleSearch(event)} placeholder="Tìm kiếm món ăn" />
 				<a href="/Timkiem"><img src="images/search.png" alt="" className="search-icon" /></a>
 			</div>
 		</div>
@@ -57,6 +71,8 @@ function App() {
               <Route path={ROUTE.COLLECTION} element={<Collection />}/>
 			  <Route path={ROUTE.UPLOAD_RECIPE} element={<UploadRecipe />}/>
 			  <Route path={ROUTE.DETAILS_RECIPE+':recipeId'} element={<DetailsRecipe />}/>
+			  <Route path={ROUTE.SEARCH+ ':nameRecipe'} element={<Search />}/>
+			  <Route path={'*'} element={<NotFound />}/>
             </Routes>
         </div>
       </div>

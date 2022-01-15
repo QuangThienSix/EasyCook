@@ -13,7 +13,7 @@ export function NotFound(props: NotFoundProps) {
           <h3>404 page not found</h3>
           <p>This page does not exist.</p>
           <Link className="button" to={'/'}>
-            Home
+              Trang chủ
           </Link>
         </div>
       </div>

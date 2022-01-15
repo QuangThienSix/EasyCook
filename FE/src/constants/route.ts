@@ -6,3 +6,4 @@ export const COLLECTION = '/collection';
 export const UPLOAD_RECIPE = '/upload-recipe';
 
 export const DETAILS_RECIPE = '/details-recipe/';
+export const SEARCH = '/search/';
