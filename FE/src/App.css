@@ -1,6 +1,5 @@
 .header {
   height: 80px;
-  width: 10%;
 }
 
 .footer{
@@ -11,18 +10,32 @@
 .side-bar{
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: #FFFFFF;
   flex: 1;
+}
+
+.side-bar > a {
+	height: 10%;
+	display: flex;
+	padding: 10px 20px;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.side-bar > a > span{
+	margin-left: 10px;
 }
 
 .container{
   height:80%;
   display: flex;
+  background-color: #E5E5E5;
 }
 
 .contain{
 	width: 100%;
 	flex: 5;
+	overflow: scroll;
 }
 
 nav {

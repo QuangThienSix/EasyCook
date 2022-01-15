@@ -8,6 +8,8 @@ import PostsViewted from "pages/posts-viewted/PostsViewted";
 import Collection from "pages/collection/Collection";
 import Home from "pages/home/Home";
 import UploadRecipe from "pages/upload-recipe/UploadRecipe";
+import DetailsRecipe from "pages/details-recipe/DetailsRecipe";
+import * as ICON from './constants/icon';
 
 
 function App() {
@@ -40,11 +42,11 @@ function App() {
 	  </header>
       <div className="container">
         <div className="side-bar">
-            <Link to={ROUTE.HOME}>Trang chủ</Link>
-            <Link to={ROUTE.RANKING}>Xếp hạng thành viên </Link>
-            <Link to={ROUTE.MY_RECIPE}>Công thức của bạn</Link>
-            <Link to={ROUTE.POSTS_VIEWTED}>Bài đăng đã xem</Link>
-            <Link to={ROUTE.COLLECTION}>Bộ sưu tập</Link>
+            <Link to={ROUTE.HOME}><ICON.HomeIcon /><span>Trang chủ</span></Link>
+            <Link to={ROUTE.RANKING}><ICON.EqualizerIcon /><span>Xếp hạng thành viên</span> </Link>
+            <Link to={ROUTE.MY_RECIPE}><ICON.HistoryEduIcon /><span>Công thức của bạn</span></Link>
+            <Link to={ROUTE.POSTS_VIEWTED}><ICON.VisibilityIcon /><span>Bài đăng đã xem</span></Link>
+            <Link to={ROUTE.COLLECTION}><ICON.FavoriteBorderIcon /><span>Bộ sưu tập</span></Link>
         </div>
         <div className="contain">
             <Routes>
@@ -54,6 +56,7 @@ function App() {
               <Route path={ROUTE.POSTS_VIEWTED} element={<PostsViewted />}/>
               <Route path={ROUTE.COLLECTION} element={<Collection />}/>
 			  <Route path={ROUTE.UPLOAD_RECIPE} element={<UploadRecipe />}/>
+			  <Route path={ROUTE.DETAILS_RECIPE+':recipeId'} element={<DetailsRecipe />}/>
             </Routes>
         </div>
       </div>

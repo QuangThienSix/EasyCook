@@ -1,24 +1,37 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
+import * as ROUTE from '../../constants/route';
+import { IRecipe } from 'types/types';
+import Rating from '@mui/material/Rating';
 
-function Card (props: any){
+function Card (props: {Recipe: IRecipe}){
+	const {Recipe} = props;
+	const formatNumberViewted = (number: number) => {
+		if(number >= 1000){
+			number = number / 1000;
+			return number + 'K';
+		}
+		return number + '';
+	}
 	return (
 		<div className="food-list">
 				<div className="food-card">
-					<a href=""><img src="images/card/card1.jpg" alt="" className="card" /></a>
+					<a href=""><img src={Recipe.urlImage} alt="" className="card" /></a>
 					<div className="flex-div">
-						<img src="images/avatar.jpg" alt="" />
+						<img src={Recipe.avatarImage} alt="" />
 						<div className="food-info">
-							<a href="">ức gà sốt cam</a>
+							<Link to={ROUTE.DETAILS_RECIPE + Recipe.recipeId}>{Recipe.nameRecipe}</Link>
 							<div className="view-icon">
 								<img src="images/card/clock.png" alt="" className="clock-icon" />
-								<p>20p</p>
+								<p>{Recipe.clock}</p>
 								<img src="images/card/eye.png" alt="" className="eye-icon" />
-								<p>232.48K</p>
+								<p>{formatNumberViewted(Recipe.numberViewted)}</p>
 							</div>
-							<div className="rating">
+							<Rating name="half-rating-read" precision={0.5} defaultValue={0} readOnly value={Recipe?.rating} size="small" />
+							{/* <div className="rating">
 								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

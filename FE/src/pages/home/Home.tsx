@@ -1,8 +1,83 @@
 import Card from "components/card/Card";
 import React from "react";
+import { IRecipe } from "types/types";
 import './style.css';
 
 function Home(): JSX.Element {
+	const dataTemp: Array<IRecipe> = [
+		{
+			recipeId: 0,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card1.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 22300,
+			rating: 5,
+		},
+		{
+			recipeId: 1,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card2.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200,
+			rating: 5,
+		},
+		{
+			recipeId: 2,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card3.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 5,
+		},
+		{
+			recipeId: 3,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card4.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 2.5,
+		},
+		{
+			recipeId: 4,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card5.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 4.6,
+		},
+		{
+			recipeId: 5,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card6.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 1.8,
+		},
+		{
+			recipeId: 6,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card7.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 5,
+		},
+		{
+			recipeId: 7,
+			nameRecipe: 'Ức gà sốt cam',
+			urlImage: 'images/card/card8.jpg',
+			avatarImage: 'images/avatar.jpg',
+			clock: '20p',
+			numberViewted: 200000,
+			rating: 5,
+		}
+	];
   return (
     <div>
 		<div className="categories">
@@ -41,14 +116,17 @@ function Home(): JSX.Element {
 	</div>
       <div className="container-card">
         <div className="list-container">
-          <Card />
+			{dataTemp.map((item: IRecipe) => {
+				return <Card Recipe={item}/>
+			})}
+         {/* <Card />
 		  <Card />
 		  <Card />
 		  <Card />
-		  <Card />
-		  <Card />
-		  <Card />
-		  <Card />
+		 <Card />
+		 <Card />
+		   <Card />
+		  <Card /> */}
         </div>
       </div>
     </div>
