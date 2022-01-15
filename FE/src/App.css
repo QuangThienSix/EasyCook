@@ -21,6 +21,7 @@
 }
 
 .contain{
+	width: 100%;
 	flex: 5;
 }
 
@@ -88,4 +89,3 @@ nav {
 	color: white;
 	font-size: larger;
   }
-  

@@ -1,4 +1,4 @@
-export const HOME = '/home';
+export const HOME = '/';
 export const RANKING = '/ranking';
 export const MY_RECIPE = '/my-recipe';
 export const POSTS_VIEWTED = '/posts-viewted';
