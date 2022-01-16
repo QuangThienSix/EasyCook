@@ -1,0 +1,20 @@
+.row {
+  padding: 20px;
+}
+.title {
+  margin-top: 17px;
+}
+.time {
+  float: left;
+  display: flex;
+}
+.add {
+  text-align: right;
+  margin-top: 15px;
+}
+.add_row {
+  margin-top: 15px;
+}
+.done {
+  text-align: center;
+}
