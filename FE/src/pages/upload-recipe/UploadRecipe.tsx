@@ -239,6 +239,7 @@ function UploadRecipe() {
                 borderColor: "#c4c4c4",
                 borderRadius: 5,
                 fontSize: "16px",
+                backgroundColor: "#e5e5e5",
               }}
             />
           </div>
