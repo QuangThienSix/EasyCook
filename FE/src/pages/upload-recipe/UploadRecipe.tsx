@@ -1,7 +1,15 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { Grid, TextField, TextareaAutosize, Button } from "@mui/material";
+import {
+  Grid,
+  TextField,
+  TextareaAutosize,
+  Button,
+  Select,
+  MenuItem,
+} from "@mui/material";
 import Multiselect from "multiselect-react-dropdown";
+import ImageUploading, { ImageListType } from "react-images-uploading";
 
 function UploadRecipe() {
   const optionsCongthuc = [
@@ -114,10 +122,51 @@ function UploadRecipe() {
     { id: 16, name: "Cho phái nữ" },
     { id: 17, name: "Tăng cân" },
   ];
+  const optionsDonVi = [
+    { id: 1, name: "gr" },
+    { id: 2, name: "Kg" },
+    { id: 3, name: "ml" },
+    { id: 4, name: "L" },
+    { id: 5, name: "Muỗng cafe" },
+    { id: 6, name: "Muỗng canh" },
+  ];
 
-  const inputFile = useRef(null);
-  const onClickAddImg = () => {
-    // inputFile.current.click();
+  const [images, setImages] = useState([]);
+  const [resources, setResources] = useState([0]);
+  const [steps, setSteps] = useState([0]);
+
+  const onChangeImg = (imageList: ImageListType) => {
+    setImages(imageList as never[]);
+  };
+
+  const addRow = (type: string) => {
+    if (type === "resources") {
+      if (resources.length > 0) {
+        let max = Math.max.apply(null, resources);
+        resources.push(max + 1);
+      } else {
+        resources.push(0);
+      }
+      setResources([...resources]);
+    } else {
+      if (steps.length > 0) {
+        let max = Math.max.apply(null, steps);
+        steps.push(max + 1);
+      } else {
+        steps.push(0);
+      }
+      setSteps([...steps]);
+    }
+  };
+
+  const deleteRow = (type: string, id: number) => {
+    if (type === "resources") {
+      const temp = resources.filter((x) => x !== id);
+      setResources([...temp]);
+    } else {
+      const temp = steps.filter((x) => x !== id);
+      setSteps([...temp]);
+    }
   };
 
   return (
@@ -128,14 +177,41 @@ function UploadRecipe() {
         </Grid>
         <Grid item xs={10}>
           <div>
-            <input type="file" ref={inputFile} style={{ display: "none" }} />
-            <img
-              src="images/addImg.png"
-              alt="Add image"
-              width="200"
-              height="200"
-              onClick={onClickAddImg}
-            />
+            <ImageUploading value={images} onChange={onChangeImg} maxNumber={1}>
+              {({
+                imageList,
+                onImageUpload,
+                onImageUpdate,
+                isDragging,
+                dragProps,
+              }) => (
+                <div className="upload__image-wrapper">
+                  <div
+                    style={{
+                      display: imageList.length == 0 ? "block" : "none",
+                    }}
+                  >
+                    <button
+                      style={isDragging ? { color: "red" } : undefined}
+                      onClick={onImageUpload}
+                      {...dragProps}
+                    >
+                      <img src="images/addImg.png" width="150" height="150" />
+                    </button>
+                  </div>
+                  {imageList.length > 0 && (
+                    <div>
+                      <img
+                        src={imageList[0].dataURL}
+                        width="150"
+                        height="150"
+                        onClick={() => onImageUpdate(0)}
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </ImageUploading>
           </div>
         </Grid>
       </Grid>
@@ -149,7 +225,6 @@ function UploadRecipe() {
           </div>
         </Grid>
       </Grid>
-
       <Grid container spacing={3} className="row">
         <Grid item xs>
           <div className="title">Mô tả</div>
@@ -158,7 +233,13 @@ function UploadRecipe() {
           <div>
             <TextareaAutosize
               minRows={5}
-              style={{ width: "100%", fontSize: "16px", padding: "15px" }}
+              style={{
+                width: "100%",
+                padding: "16.5px 14px",
+                borderColor: "#c4c4c4",
+                borderRadius: 5,
+                fontSize: "16px",
+              }}
             />
           </div>
         </Grid>
@@ -190,43 +271,129 @@ function UploadRecipe() {
             <div>
               <Grid container>
                 <Grid item xs={5}>
-                  <TextField fullWidth value="Tên" />
+                  <TextField
+                    disabled
+                    fullWidth
+                    label="Tên"
+                    InputLabelProps={{
+                      style: {
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        width: "100%",
+                        color: "black",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                      },
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={2}>
-                  <div>
-                    <TextField fullWidth value="Số lượng" />
-                  </div>
+                  <TextField
+                    disabled
+                    fullWidth
+                    label="Số lượng"
+                    InputLabelProps={{
+                      style: {
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        width: "100%",
+                        color: "black",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                      },
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={3}>
-                  <div>
-                    <TextField fullWidth value="Đơn vị" />
-                  </div>
+                  <TextField
+                    disabled
+                    fullWidth
+                    label="Đơn vị"
+                    InputLabelProps={{
+                      style: {
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        width: "100%",
+                        color: "black",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                      },
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={2}></Grid>
               </Grid>
-              <Grid container className="add_row">
-                <Grid item xs={5}>
-                  <TextField fullWidth />
-                </Grid>
-                <Grid item xs={2}>
-                  <div>
+              {resources.map((item) => (
+                <Grid
+                  key={item}
+                  id={`resrc${item}`}
+                  container
+                  className="add_row"
+                >
+                  <Grid item xs={5}>
                     <TextField fullWidth />
-                  </div>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <TextField
+                      type="number"
+                      InputProps={{
+                        inputProps: {
+                          min: 0,
+                        },
+                      }}
+                    />
+                  </Grid>
+                  <Grid item xs={3}>
+                    <select>
+                      <option value="" disabled selected>
+                        Chọn định lượng
+                      </option>
+                      {optionsDonVi.map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.name}
+                        </option>
+                      ))}
+                    </select>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Button
+                      variant="contained"
+                      fullWidth
+                      style={{
+                        height: "55px",
+                        background: "none",
+                      }}
+                      onClick={() => {
+                        deleteRow("resources", item);
+                      }}
+                    >
+                      <img
+                        src="images/delete_step.png"
+                        width="25"
+                        height="25"
+                      />
+                    </Button>
+                  </Grid>
                 </Grid>
-                <Grid item xs={3}>
-                  <div>
-                    <TextField fullWidth />
-                  </div>
-                </Grid>
-                <Grid item xs={2}>
-                  <div>
-                    <TextField fullWidth />
-                  </div>
-                </Grid>
-              </Grid>
+              ))}
             </div>
             <div className="add">
-              <Button variant="contained">Add</Button>
+              <Button
+                variant="contained"
+                fullWidth
+                style={{
+                  height: "55px",
+                  width: "149.91px",
+                }}
+                onClick={() => {
+                  addRow("resources");
+                }}
+              >
+                <img src="images/add_step.png" width="25" height="25" />
+              </Button>
             </div>
           </div>
         </Grid>
@@ -240,33 +407,108 @@ function UploadRecipe() {
             <div>
               <Grid container>
                 <Grid item xs={1}>
-                  <TextField fullWidth value="Bước" />
+                  <TextField
+                    disabled
+                    fullWidth
+                    label="Bước"
+                    InputLabelProps={{
+                      style: {
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        width: "100%",
+                        color: "black",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                      },
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={9}>
-                  <div>
-                    <TextField fullWidth value="Chi tiết" />
-                  </div>
+                  <TextField
+                    disabled
+                    fullWidth
+                    label="Chi tiết"
+                    InputLabelProps={{
+                      style: {
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        width: "100%",
+                        color: "black",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                      },
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={2}></Grid>
               </Grid>
-              <Grid container className="add_row">
-                <Grid item xs={1}>
-                  <TextField fullWidth />
+              {steps.map((item, idx) => (
+                <Grid
+                  key={item}
+                  id={`step${item}`}
+                  container
+                  className="add_row"
+                >
+                  <Grid item xs={1}>
+                    <TextField
+                      disabled
+                      fullWidth
+                      label={idx + 1}
+                      InputLabelProps={{
+                        style: {
+                          textOverflow: "ellipsis",
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          width: "100%",
+                          color: "black",
+                          textAlign: "center",
+                        },
+                      }}
+                    />
+                  </Grid>
+                  <Grid item xs={9}>
+                    <div>
+                      <TextField fullWidth />
+                    </div>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Button
+                      variant="contained"
+                      fullWidth
+                      style={{
+                        height: "55px",
+                        background: "none",
+                      }}
+                      onClick={() => {
+                        deleteRow("steps", item);
+                      }}
+                    >
+                      <img
+                        src="images/delete_step.png"
+                        width="25"
+                        height="25"
+                      />
+                    </Button>
+                  </Grid>
                 </Grid>
-                <Grid item xs={9}>
-                  <div>
-                    <TextField fullWidth />
-                  </div>
-                </Grid>
-                <Grid item xs={2}>
-                  <div>
-                    <TextField fullWidth />
-                  </div>
-                </Grid>
-              </Grid>
+              ))}
             </div>
             <div className="add">
-              <Button variant="contained">Add</Button>
+              <Button
+                variant="contained"
+                fullWidth
+                style={{
+                  height: "55px",
+                  width: "149.91px",
+                }}
+                onClick={() => {
+                  addRow("steps");
+                }}
+              >
+                <img src="images/add_step.png" width="25" height="25" />
+              </Button>
             </div>
           </div>
         </Grid>
@@ -278,6 +520,7 @@ function UploadRecipe() {
         <Grid item xs={10}>
           <div>
             <Multiselect
+              placeholder="Lựa chọn"
               options={optionsCongthuc}
               displayValue="name"
               showCheckbox={true}
@@ -301,6 +544,7 @@ function UploadRecipe() {
         <Grid item xs={10}>
           <div>
             <Multiselect
+              placeholder="Lựa chọn"
               options={optionsLoaimon}
               displayValue="name"
               showCheckbox={true}
@@ -324,6 +568,7 @@ function UploadRecipe() {
         <Grid item xs={10}>
           <div>
             <Multiselect
+              placeholder="Lựa chọn"
               options={optionsCachthuchien}
               displayValue="name"
               showCheckbox={true}
@@ -347,6 +592,7 @@ function UploadRecipe() {
         <Grid item xs={10}>
           <div>
             <Multiselect
+              placeholder="Lựa chọn"
               options={optionsMuadiple}
               displayValue="name"
               showCheckbox={true}
@@ -370,6 +616,7 @@ function UploadRecipe() {
         <Grid item xs={10}>
           <div>
             <Multiselect
+              placeholder="Lựa chọn"
               options={optionsMucdich}
               displayValue="name"
               showCheckbox={true}
@@ -387,7 +634,15 @@ function UploadRecipe() {
         </Grid>
       </Grid>
       <div className="done">
-        <Button variant="contained" style={{ marginBottom: "20px" }}>
+        <Button
+          variant="contained"
+          style={{
+            marginBottom: "20px",
+            height: "56px",
+            width: "149.91px",
+            fontSize: "20px",
+          }}
+        >
           Hoàn tất
         </Button>
       </div>
