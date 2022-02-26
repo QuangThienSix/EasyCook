@@ -1,0 +1,12 @@
+.tutorial .resource-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 3rem;
+}
+
+.tutorial .resource-list .content_left {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: left;
+}
+

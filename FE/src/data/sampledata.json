@@ -1,74 +1,490 @@
 [
-    {
-        "recipeId": "0",
-        "nameRecipe": "Ức gà sốt cam",
-        "urlImage": "images/card/card1.jpg",
-        "avatarImage": "images/avatar.jpg",
-        "clock": "20p",
-        "numberViewted": "22300",
-        "rating": "5"
-    },
-    {
-        "recipeId": "1",
-        "nameRecipe": "Ức gà sốt cam",
-        "urlImage": "images/card/card2.jpg",
-        "avatarImage": "images/avatar.jpg",
-        "clock": "20p",
-        "numberViewted": "200",
-        "rating": "5"
-    },
-    {
-      "recipeId": "2",
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card3.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "5"
-    },
-    {
-      "recipeId": "3",
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card4.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "2.5"
-    },
-    {
-      "recipeId": "4",
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card5.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "4.6"
-    },
-    {
-      "recipeId": 5,
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card6.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "1.8"
-    },
-    {
-      "recipeId": "6",
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card7.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "5"
-    },
-    {
-      "recipeId": "7",
-      "nameRecipe": "Ức gà sốt cam",
-      "urlImage": "images/card/card8.jpg",
-      "avatarImage": "images/avatar.jpg",
-      "clock": "20p",
-      "numberViewted": "200000",
-      "rating": "5"
-    }
+  {
+    "recipeId": "0",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card1.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "22300",
+    "rating": "5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "1",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card2.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200",
+    "rating": "5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "2",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card3.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "3",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card4.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "2.5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "4",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card5.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "4.6",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": 5,
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card6.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "1.8",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "6",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card7.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "7",
+    "nameRecipe": "Ức gà sốt cam",
+    "urlImage": "images/card/card8.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "200000",
+    "rating": "5",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Thịt ức gà cắt thành những miếng vuông nhỏ. Bắt chảo nóng, cho vào 2 muỗng canh dầu ăn, thêm thịt gà cắt nhỏ vào chảo, nêm 1 ít muois tiêu rồi chiên thịt gà vàng điều. Trút thịt gà đã xào ra dĩa để riêng."
+      },
+      {
+        "name": "2",
+        "value": "Trên chảo lúc nảy thêm vào 10gr tảo băm, phi lê cho tỏi vàng thơm, Sau đó cho thêm 100ml nước ép cam vào, 2 muỗng canh mật ong, 1/2 muỗng canh nước tương, 1 muỗng cà phê hạt niêm, 1/2 muỗng cà phê tiêu, khuấy đều rồi đun cho sôi lên cho kẹo lại."
+      },
+      {
+        "name": "3",
+        "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  }
 ]

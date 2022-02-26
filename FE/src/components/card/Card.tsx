@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './style.css';
 import * as ROUTE from '../../constants/route';
 import { IRecipe } from 'types/types';
 import Rating from '@mui/material/Rating';
 
 function Card (props: {Recipe: IRecipe}){
+
+	const navigate = useNavigate ();
+
+
 	const {Recipe} = props;
 	const formatNumberViewted = (number: number) => {
 		if(number >= 1000){
@@ -14,10 +18,16 @@ function Card (props: {Recipe: IRecipe}){
 		}
 		return number + '';
 	}
+
+	const handleDetail = (Recipe: IRecipe) => {
+		navigate(`${ROUTE.DETAILS_RECIPE}${Recipe.recipeId}`);
+	}
+
+
 	return (
-		<div className="food-list">
+		<div className="food-list" onClick={()=>{handleDetail(Recipe)}}>
 				<div className="food-card">
-					<a href=""><img src={Recipe.urlImage} alt="" className="card" /></a>
+					<img src={Recipe.urlImage} alt="" className="card" />
 					<div className="flex-div">
 						<img src={Recipe.avatarImage} alt="" />
 						<div className="food-info">
