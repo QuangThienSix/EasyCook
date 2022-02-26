@@ -22,7 +22,8 @@ function UploadRecipe() {
     { id: 5, name: "Món ăn sáng" },
     { id: 6, name: "Thức uống" },
     { id: 7, name: "Bánh - Bánh ngọt" },
-    { id: 8, name: "Món khác" },
+    { id: 8, name: "Món ăn tối" },
+    { id: 9, name: "Món khác" },
   ];
   const optionsLoaimon = [
     { id: 1, name: "Salad" },
@@ -58,6 +59,7 @@ function UploadRecipe() {
     { id: 31, name: "Món luộc" },
     { id: 32, name: "Thạch - Rau câu" },
     { id: 33, name: "Sữa chua" },
+    { id: 34, name: "Món Cơm"},
   ];
   const optionsCachthuchien = [
     { id: 1, name: "Nướng" },

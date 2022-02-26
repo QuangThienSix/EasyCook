@@ -30,7 +30,8 @@ const optionsCongThuc: Array<optionCongThuc> = [
     { id: 5, name: "Món ăn sáng" },
     { id: 6, name: "Thức uống" },
     { id: 7, name: "Bánh - Bánh ngọt" },
-    { id: 8, name: "Món khác" },
+    { id: 8, name: "Món ăn tối" },
+    { id: 9, name: "Món khác" },
 ];
 
 const optionsLoaiMon: Array<optionLoaiMon>= [
@@ -68,6 +69,7 @@ const optionsLoaiMon: Array<optionLoaiMon>= [
     { id: 31, name: "Món luộc" },
     { id: 32, name: "Thạch - Rau câu" },
     { id: 33, name: "Sữa chua" },
+    { id: 34, name: "Món cơm"},
   ];
 
   const optionsMua: Array<optionMua> = [
@@ -82,15 +84,17 @@ function Search() {
     const dataTemp: Array<IRecipe> = require("../../data/sampledata.json");
     const navigate = useNavigate();
     const param = useParams();
+    const [dataFilter, setDataFilter] = useState<Array<IRecipe>>([]);
     const [dataSearch, setDataSearch] = useState<Array<IRecipe>>([]);
     const [recipe, setRecipe] = useState('0');
     const [typeRecipe, setTypeRecipe] = useState('0');
     const [season, setSeason] = useState('0');
     useEffect(() => {
         if (param?.nameRecipe) {
-            const textSearch = param?.nameRecipe;
-            const items = dataTemp.filter((item: IRecipe) => item.nameRecipe.includes(textSearch));
+            const textSearch = param?.nameRecipe.toLowerCase();
+            const items = dataTemp.filter((item: IRecipe) => item.nameRecipe.toLowerCase().includes(textSearch));
             setDataSearch(items);
+            setDataFilter(items);
         } else {
             navigate('/');
         }
@@ -99,13 +103,53 @@ function Search() {
     }, [navigate])
     const handleChange = (event: SelectChangeEvent) => {
         setRecipe(event.target.value as string);
+        if(String(event.target.value) !== '0'){
+            const recipeFor = optionsCongThuc.find((item: optionCongThuc) => {
+                return String(item.id) === String(event.target.value);
+            });
+            const temp = dataSearch.filter((item: IRecipe) => {
+                return item.recipefor?.find((item: string) => {
+                    return item === recipeFor?.name;
+                })
+            })
+            setDataFilter(temp);
+        }else{
+            setDataFilter(dataSearch);
+        }
+        
     };
     const handleLoaiMon = (event: SelectChangeEvent) => {
         setTypeRecipe(event.target.value as string);
+        if(String(event.target.value) !== '0'){
+            const typeOfDish = optionsLoaiMon.find((item: optionLoaiMon) => {
+                return String(item.id) === String(event.target.value);
+            });
+            const temp = dataSearch.filter((item: IRecipe) => {
+                return item.typeOfDish?.find((item: string) => {
+                    return item === typeOfDish?.name;
+                })
+            })
+            setDataFilter(temp);
+        }else{
+            setDataFilter(dataSearch);
+        }
     };
 
     const handleSeason = (event: SelectChangeEvent) => {
         setSeason(event.target.value as string);
+        if(String(event.target.value) !== '0'){
+            const seasons = optionsMua.find((item: optionMua) => {
+                return String(item.id) === String(event.target.value);
+            });
+            const temp = dataSearch.filter((item: IRecipe) => {
+                return item.seasons?.find((item: string) => {
+                    return item === seasons?.name;
+                })
+            })
+            setDataFilter(temp);
+        }else{
+            setDataFilter(dataSearch);
+        }
     };
     return (
         <>
@@ -155,7 +199,7 @@ function Search() {
             </div>
             <div className="container-card">
                 <div className="list-container">
-                    {dataSearch.map((item: IRecipe) => {
+                    {dataFilter.map((item: IRecipe) => {
                         return <Card Recipe={item} />;
                     })}
                 </div>
