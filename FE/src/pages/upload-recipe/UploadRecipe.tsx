@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import Multiselect from "multiselect-react-dropdown";
 import ImageUploading, { ImageListType } from "react-images-uploading";
+import { Link } from "react-router-dom";
+import * as ROUTE from "../../constants/route";
 
 function UploadRecipe() {
   const optionsCongthuc = [
@@ -635,17 +637,19 @@ function UploadRecipe() {
         </Grid>
       </Grid>
       <div className="done">
-        <Button
-          variant="contained"
-          style={{
-            marginBottom: "20px",
-            height: "56px",
-            width: "149.91px",
-            fontSize: "20px",
-          }}
-        >
-          Hoàn tất
-        </Button>
+        <Link to={ROUTE.MY_RECIPE}>
+          <Button
+            variant="contained"
+            style={{
+              marginBottom: "20px",
+              height: "56px",
+              width: "149.91px",
+              fontSize: "20px",
+            }}
+          >
+            Hoàn tất
+          </Button>
+        </Link>
       </div>
     </div>
   );
