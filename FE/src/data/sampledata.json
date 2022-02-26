@@ -577,67 +577,504 @@
     ]
   },
   {
-    "recipeId": "",
-    "nameRecipe": "",
-    "urlImage": "images/card/.jpg",
+    "recipeId": "9",
+    "nameRecipe": "Bún chay kiểu Huế",
+    "urlImage": "images/card/card9.jpg",
     "avatarImage": "images/avatar.jpg",
-    "clock": "p",
-    "numberViewted": "200000",
-    "rating": "5",
-	"recipefor":"",
-	"typeOfDish":"",
-	"seasons":"",
-	"mealfor":"",
+    "clock": "45p",
+    "numberViewted": "72700",
+    "rating": "4",
+	"recipefor":["Món chay","Món chính", "Món ăn sáng"],
+	"typeOfDish":["Chay","Bún - Mì - Phở"],
+	"seasons":["Mùa Xuân","Mùa Hè", "Mùa Thu", "Mùa Đông"],
+	"mealfor":"2",
     "tutorial": [
       {
         "name": "1",
-        "value": ""
+        "value": "Nguyên liệu nấu bún chay: Rau sống rửa sạch để ráo. Rau củ quả rửa sạch cắt khúc, lá hành boa-rô cắt khúc."
       },
       {
         "name": "2",
-        "value": ""
+        "value": "Cách nấu bún chay: Cho tất cả rau củ quả vào nồi, rồi cho nước, ít muối vào hầm cho ra nước ngọt, hầm đến khi hỗn hợp mềm. Sau đó lược lấy nước dùng, chỉ sử dụng lại củ cải trắng thôi (rau củ quả còn lại dùng vào việc khác)."
       },
       {
         "name": "3",
-        "value": ""
+        "value": "Cho nồi nước dùng bún chay đã lược lại lên bếp, củ cải trắng (đã nấu chín), thơm cắt miếng, cọng sả đập dập, ít cọng trắng đầu hành boa rô cắt khúc vào nấu với lửa nhỏ cho thơm mềm. Rồi nêm nếm gia vị: hạt nêm chay, đường phèn, đậu hũ cắt nhỏ vào (khi nào ăn mới cho vào), ít dầu màu điều cho đẹp."
       },
       {
         "name": "4",
-        "value": ""
+        "value": "Sốt nấm ăn kèm bún chay Huế: Cho ít dầu ăn vào chảo, dầu nóng cho đầu hành boa rô băm nhỏ vào phi thơm rồi cho cà chua cắt hạt lựu vào xào, kế đó cho nấm rơm và ít nước vào, gia vị đậm đà um cho thấm, nấu đến khi nước còn sền sệt."
+      },
+	  {
+		  "name":"5",
+		  "value":"Bày trí bún chay kiểu Huế: Múc sốt nấm ra tô. Cho bún đã trụng nóng vào tô, vài miếng thơm, đậu hũ, củ cải trắng. Rồi chan nước dùng lên tô bún, sau đó mới cho sốt nấm lên trên cùng, cho rau ngò gai, lá hành boa rô cắt nhỏ lên. Cách nấu bún chay thơm ngon nhưng lại đơn giản phải không nào? Cuối tuần rảnh rỗi, chị em hãy thử với cách nấu bún chay cực hấp dẫn này nhé."
+	  }
+    ],
+    "resources": [
+      {
+        "name": "Bí đỏ",
+        "value": "500 Gr"
+      },
+      {
+        "name": "Củ cải trắng",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Thơm",
+        "value": "1/2 Trái"
+      },
+      {
+        "name": "Cải thảo",
+        "value": "250 Gr"
+      },
+      {
+        "name": "Cà chua",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nấm rơm",
+        "value": "200 Gr"
+      },
+      {
+        "name": "Đậu hũ chiên",
+        "value": "2 Miếng"
+      },
+      {
+        "name": "Sả",
+        "value": "4 Cây"
+      },
+	  {
+        "name": "Hành boa rô",
+        "value": "5 Cây"
+      },
+	  {
+        "name": "Hạt nêm chay",
+        "value": "2 Muỗng cà phê"
+      },
+	  {
+        "name": "Đường phèn",
+        "value": "1 Muỗng cà phê"
+      },
+	  {
+        "name": "Dầu điều",
+        "value": "1/2 Muỗng cà phê"
+      },
+	  {
+        "name": "Bún tươi",
+        "value": "500 Gr"
+      }
+    ]
+  },
+  {
+    "recipeId": "10",
+    "nameRecipe": "Homemade Cappuccino",
+    "urlImage": "images/card/card10.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "30p",
+    "numberViewted": "60000",
+    "rating": "4",
+	"recipefor":["Thức uống"],
+	"typeOfDish":["Coffee"],
+	"seasons":["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+	"mealfor":"1",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Xay cà phê: Xay thô hạt cà phê. Không nên xay quá mịn vì khi ấn Piston sẽ khiến bột bị lẫn vào nước cà phê sau cùng."
+      },
+      {
+        "name": "2",
+        "value": "Pha cà phê: Ủ ấm bình French Fress với nước sôi trong 2 phút. Đổ cà phê đã xay vào, thêm 100ml nước sôi, khuấy nhẹ để cà phê ngấm và nở đều. Thêm tiếp 100ml nước sôi vào, lắp piston và ủ trong khoảng 4 phút. Sau thời gian trên, ấn từ từ piston xuống theo chiều thẳng đứng để nén phần bã cà phê xuống. Rót cà phê ra ly."
+      },
+      {
+        "name": "3",
+        "value": "Tạo bọt sữa: Hâm nóng 180ml sữa tươi thanh trùng Dalat Milk rồi đổ vào bình French Fress. Gắn piston vào và ấn kéo liên tục trong khoảng 15 - 20 giây để tạo bọt sữa. Sau đó, đổ sữa vào ly cà phê, thêm bọt sữa, bột cacao lên mặt ly và tạo hình tùy thích."
+      },
+      {
+        "name": "4",
+        "value": "Cà phê thơm quyện cùng lớp bọt sữa béo mịn là một thức uống tuyệt vời để bắt đầu một ngày mới đầy năng lượng. Bạn có thể tăng thêm hương vị của tách cappuccino bằng cách thưởng thức nóng cùng đường hoặc bánh quy."
       }
     ],
     "resources": [
       {
-        "name": "Ức gà",
-        "value": "300 Gr"
+        "name": "Cà phê xay thô",
+        "value": "20 Gr"
       },
       {
-        "name": "Nước ép cam",
-        "value": "100 ml"
+        "name": "Nước sôi",
+        "value": "200 ml"
       },
       {
-        "name": "Hành lá",
+        "name": "Sữa tươi thanh trùng Dalat Milk 180ml",
         "value": "10 Grl"
       },
       {
-        "name": "Mè rang",
+        "name": "Bình French Fress",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "recipeId": "11",
+    "nameRecipe": "Xà lách trộn thịt bò cà chua",
+    "urlImage": "images/card/card11.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "85200",
+    "rating": "4",
+	"recipefor":["Món khai vị","Món Chính"],
+	"typeOfDish":["Salad"],
+	"seasons":["Mùa Xuân", "Mùa Thu"],
+	"mealfor":"2",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Xà lách tách lá, rửa sạch, thái thành từng đoạn vừa ăn. Hành tây, cà chua rửa sạch, thái lát mỏng."
+      },
+      {
+        "name": "2",
+        "value": "Pha 200ml nước lọc với 50ml nước cốt chanh, 2 muỗng canh đường, 1/2 muỗng cà phê muối rồi khuấy đều. Hành tây thái lát mỏng cho vào hỗn hợp ngâm khoảng 15 phút để loại bỏ mùi hăng."
+      },
+      {
+        "name": "3",
+        "value": "Thịt bò thái lát mỏng vừa ăn. Ướp thịt bò với 2 muỗng canh dầu hào, 5gr hành tím băm, 5gr tỏi băm và 1/2 muỗng cà phê tiêu xay. Để khoảng 15 phút cho bò thấm gia vị. Làm nóng chảo, phi thơm 10gr tỏi băm với 1 muỗng canh dầu ăn rồi cho thịt bò đã ướp vào xào nhanh với lửa lớn. Thịt bò vừa chín tới thì tắt bếp để nguội."
+      },
+      {
+        "name": "4",
+        "value": "Pha nước sốt trộn xà lách: 4 muỗng canh nước tương, 1.5 muỗng canh đường, 1 muỗng canh giấm gạo, 1 muỗng cà phê tỏi phi vàng, 1 muỗng cà phê ớt băm. Khuấy đều hỗn hợp cho đường tan và hòa quyện sau đó mới thêm vào 2 muỗng cà phê dầu olive rồi khuấy lên lần nữa. Nếm sốt trộn thấy có vị chua ngọt vừa ăn là được."
+      },
+	  {
+		  "name":"5",
+		  "value":"Xếp xà lách ra đĩa, thêm thịt bò xào, trang trí cà chua thái lát và hành tây xung quanh rồi rưới đều nước sốt lên trên. Món xà lách trộn thanh mát, nước sốt trộn đậm đà với vị chua ngọt nhẹ, các loại rau kết hợp với thịt bò xào rất hài hòa, đặc biệt hành tây không hề bị hăng giúp tăng cảm giác ngon miệng lên rất nhiều."
+	  }
+    ],
+    "resources": [
+      {
+        "name": "Thịt bò",
+        "value": "150 Gr"
+      },
+      {
+        "name": "Xà lách",
+        "value": "250 Gr"
+      },
+      {
+        "name": "Cà chua",
+        "value": "100 Gr"
+      },
+      {
+        "name": "Hành tây",
+        "value": "100 Gr"
+      },
+      {
+        "name": "Nước cốt chanh",
+        "value": "50 ml"
+      },
+      {
+        "name": "Tỏi băm",
+        "value": "15 Gr"
+      },
+      {
+        "name": "Hành tím băm",
         "value": "5 Gr"
       },
       {
-        "name": "Mật ong",
-        "value": "2 muỗng canh"
-      },
-      {
-        "name": "Nước tương",
-        "value": "1/2 muỗng canh"
-      },
-      {
-        "name": "Hạt nêm",
+        "name": "Tỏi phi",
         "value": "1 muỗng cà phê"
       },
-      {
+	  {
+        "name": "Ớt băm",
+        "value": "1 muỗng cà phê"
+      },
+	  {
+        "name": "Dầu ăn",
+        "value": "1 muỗng cà phê"
+      },
+	  {
+        "name": "Dầu oliu",
+        "value": "2 muỗng cà phê"
+      },
+	  {
+        "name": "Nước tương Maggi",
+        "value": "4 muỗng cà phê"
+      },
+	  {
+        "name": "Dầu hào Maggi",
+        "value": "2 muỗng cà phê"
+      },
+	  {
+        "name": "Đường trắng",
+        "value": "3 muỗng cà phê"
+      },
+	  {
+        "name": "Giấm gạo",
+        "value": "1 muỗng cà phê"
+      },
+	  {
         "name": "Tiêu",
         "value": "1/2 muỗng cà phê"
+      },
+	  {
+        "name": "Muối",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "12",
+    "nameRecipe": "Lẩu Thái",
+    "urlImage": "images/card/card12.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "50p",
+    "numberViewted": "929100",
+    "rating": "4",
+	"recipefor":["Món Lẩu","Món Chính"],
+	"typeOfDish":["Lẩu"],
+	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
+	"mealfor":"4",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Sơ chế nguyên liệu lẩu Thái hải sản: Rửa sạch xương ống, để ráo. Bóc vỏ tôm, chẻ lưng, rút bỏ phần chỉ đen. Cắt mực thành những khoanh tròn hoặc cắt miếng, khía vẩy rồng, xếp ra đĩa. Ngâm nghêu vào nước ớt ít trái ớt cắt nhỏ cho nhả sạch cát, rửa sạch."
+      },
+      {
+        "name": "2",
+        "value": "Rửa sạch nấm rơm, cắt làm đôi. Nhặt sạch rau nhút, rau muống và hành lá rửa sạch, cắt khúc vừa ăn. Đập dập sả, cắt khúc khoảng 4-5 cm. Bóc vỏ hành tây, cắt mỏng. Rửa sạch đậu hũ non dưới vòi nước, cắt thành những miếng nhỏ. Rửa sạch cà chua, cắt nhỏ múi cau. Dầm me chín với nước sôi, lược qua rây lấy nước cốt me."
+      },
+      {
+        "name": "3",
+        "value": "Cách nấu nước dùng lẩu thái ngon chuẩn: Cho xương ống vào nồi cùng 2 lít nước, nấu sôi. Tiếp theo, lấy xương ống ra, đun sôi nồi nước để nấu lẩu. Cho sả, cà chua, nấm rơm, hành lá vào nấu khoảng 15 phút."
+      },
+      {
+        "name": "4",
+        "value": "Đổ nước cốt me, đậu hũ non, 2 muỗng canh sa tế, 1 muỗng canh nước mắm, 1 muỗng cà phê bột ngọt, 1 muỗng cà phê hạt nêm và ớt vào cho vừa ăn. Tắt bếp, bắc nồi lẩu xuống."
+      },
+	  {
+		  "name":"5",
+		  "value":"Bày trí lẩu Thái chua cay: Cho tôm, nghêu, mực, rau muống, rau nhút... ra đĩa ăn cùng bún. Dùng bếp nhiệt điện hoặc bếp gas mini cho tiện ăn lẩu Thái nhé. Sau khi hoàn tất dọn ra mâm thì chỉ cần đun sôi nồi nước dùng lẩu thái, cho các nguyên liệu hải sản vào nấu sôi lại, thêm tiếp rau sống vào đun sôi trở lại là dùng được rồi đấy. Với cách làm lẩu Thái này, đảm bảo cả nhà sẽ có bữa ăn cuối tuần vô cùng hấp dẫn."
+	  }
+    ],
+    "resources": [
+      {
+        "name": "Xương ống",
+        "value": "1Kg"
+      },
+      {
+        "name": "Tôm tươi",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Mực",
+        "value": "300 Gr"
+      },
+	  {
+        "name": "Nghêu",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nấm rơm",
+        "value": "200 Gr"
+      },
+      {
+        "name": "Rua muống",
+        "value": "200 Gr"
+      },
+	  {
+		  "name":"Sả",
+		  "value":"4 Cây"
+	  },
+	  {
+		"name":"Me Chín",
+		"value":"100 Gr"
+	},
+	{
+		"name":"Cà chua",
+		"value":"2 Trái"
+	},
+	{
+		"name":"Sa tế",
+		"value":"2 Muỗng cà phê"
+	},
+	{
+		"name":"Dầu ăn",
+		"value":"2 muỗng cà phê"
+	},
+	{
+		"name":"Nước mắm",
+		"value":"1 muỗng cà phê"
+	},
+	{
+		"name":"Bột ngọt",
+		"value":"1 muỗng cà phê"
+	},
+	{
+		"name":"Hạt nêm",
+		"value":"1 muỗng cà phê"
+	},
+	{
+		"name":"Hành tây",
+		"value":"1 củ"
+	},
+	{
+		"name":"ớt",
+		"value":"5 Trái"
+	},
+	{
+		"name":"rau nhút",
+		"value":"200 Gr"
+	},
+	{
+		"name":"Hành lá",
+		"value":"100 Gr"
+	},
+	{
+		"name":"Bún tươi",
+		"value":"1 Kg"
+	},
+	{
+		"name":"Đậu hũ non",
+		"value":"2 miếng"
+	},
+	{
+		"name":"Sa tế",
+		"value":"2 muỗng cà phê"
+	}
+    ]
+  },
+  {
+    "recipeId": "13",
+    "nameRecipe": "Bánh mì chảo",
+    "urlImage": "images/card/card13.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "20p",
+    "numberViewted": "30200",
+    "rating": "4",
+	"recipefor":["Món khai vị","Món Chính","Món ăn sáng"],
+	"typeOfDish":["Bánh mặn-Ngọt","Món Chiên"],
+	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
+	"mealfor":"2",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Rửa thật sạch cà chua, để cho cà ráo nước và cắt cà thành từng múi cau vừa ăn. Cắt tiếp hành tây thành sợi mỏng vừa đủ là được, không nên cắt quá dày sẽ không ngon đâu nhé. Rửa sạch ngò rí và để thật ráo nước, sau đó cắt nhuyễn ngò."
+      },
+      {
+        "name": "2",
+        "value": "Đun nóng chảo trên bếp với lửa vừa, phi thơm hành tím cho thật dậy mùi và có màu vàng đẹp mắt. Đổ cà chua đã cắt múi cau vào xào sơ, thêm chút nước lọc để cà chua mềm ra thành nước sốt. Có thể nêm nếm lại tùy theo khẩu vị của mỗi người nha. Tiếp đó đổ hết hộp cá hộp vô chảo cho sôi lại rồi tắt bếp."
+      },
+      {
+        "name": "3",
+        "value": "Chế dầu vào một chảo khác, thả hành tây vào xào sơ. Đập tiếp một quả trứng vào chiên ốp la, khi trứng gần chín thì múc nước sốt cà chua, cá mòi đã nấu chín ở bước 2 vào. Lột vỏ phô mai con bò cười, đặt vào chảo. Đun cho nước sốt sôi lại là có thể tắt bếp rồi đó. Rắc thêm chút tiêu ngò nữa là hoàn thành món bánh mì nha."
+      },
+      {
+        "name": "4",
+        "value": "Khi thưởng thức Bánh mì chảo có thể dùng kèm tương ớt hoặc nước tương để tăng thêm hương vị cho món ăn. Bánh mì giòn rụm chấm cùng nước sốt cà chua, thêm 1 chút cá mòi, trứng ốp la và phô mai béo ngậy sẽ làm thức tỉnh vị giác của bạn cùng mọi người trong gia đình. Đặc biệt món bánh mì này vừa dễ làm, vừa dễ ăn, thích hợp cho cả người lớn và trẻ nhỏ đấy. Nhanh tay lưu ngay cách làm bánh mì chảo lại chị em nhé."
+      }
+    ],
+    "resources": [
+      {
+        "name": "Cá hộp",
+        "value": "1 Hộp"
+      },
+      {
+        "name": "Cà chua",
+        "value": "2 Trái"
+      },
+      {
+        "name": "Hành tây",
+        "value": "1 Củ"
+      },
+	  {
+        "name": "Trứng gà",
+        "value": "2 Trái"
+      },
+      {
+        "name": "Phô mai",
+        "value": "200 Gr"
+      },
+      {
+        "name": "Ngò rí",
+        "value": "1 cây"
+      },
+	  {
+		"name": "Bánh mì",
+        "value": "2 ổ"
+	  }
+    ]
+  },
+  {
+    "recipeId": "14",
+    "nameRecipe": "Cheesecake Đào",
+    "urlImage": "images/card/card14.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "40p",
+    "numberViewted": "88200",
+    "rating": "4",
+	"recipefor":["Món khai vị","Bánh - Bánh ngọt","Món tráng miệng"],
+	"typeOfDish":["Bánh mặn - Ngọt"],
+	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
+	"mealfor":"2",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Lót giấy nến vào khuôn. Đào thái lát mỏng 400g, phần nước bạn để riêng ra để dùng tráng lên mặt bánh. Bánh quy cho vào 1 túi nilon dầy, dùng búa nhỏ đập vụn, bỏ ra bát. Bơ đặt lên bếp làm chảy, đổ vào phần vụn bánh rồi nghiền đều thành 1 hỗn hợp dẻo. Nén hỗn hợp này xuống đáy khuôn thành 1 lớp chừng 5-7mm. Sau đó để vào tủ lạnh khoảng 20-30 phút."
+      },
+      {
+        "name": "2",
+        "value": "Phần đào còn lại bạn thái thành viên nhỏ và cho vào trộn cùng phô mai, sữa chua và vỏ chanh bào, đánh thật đều mịn. Bột gelatine ngâm với chút nước rồi cho lên bếp đun thật nhỏ lửa làm nóng rồi tắt bếp ngay, khuấy đều đến khi bột tan hết. Bắc ra để nguội 1 chút thì đổ vào hỗn hợp sữa chua và phô mai, đánh thật đều, cho thêm 100g đường và vani đánh thêm chút nữa rồi đổ tất cả vào khuôn bánh, dàn mặt kem cho thật phẳng rồi xếp các lát đào lên trên."
+      },
+      {
+        "name": "3",
+        "value": "Bột rau câu cho vào phần nước đào, thêm 30g đường đặt lên bếp làm nóng, khuấy đều đến khi bột tan hết, nếu có bọt thì bạn phải hớt đi hết. Rót 200ml rượu vào khuấy đều rồi đổ lên mặt bánh. Sau đó cất vào tủ lạnh ít nhất 3 tiếng đồng hồ nhé!"
+      },
+      {
+        "name": "4",
+        "value": "Cheessecake đào vị ngọt dịu mát lạnh và béo thơm đặc trưng của phô mai và đào, dễ dàng đánh gục các nàng hảo ngọt."
+      }
+    ],
+    "resources": [
+      {
+        "name": "Bánh quy",
+        "value": "150 Gr"
+      },
+      {
+        "name": "Bơ",
+        "value": "125 Gr"
+      },
+      {
+        "name": "Đào hộp",
+        "value": "500 Gr"
+      },
+	  {
+        "name": "Phô mai",
+        "value": "600 Gr"
+      },
+      {
+        "name": "Sữa chua",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Vỏ chanh",
+        "value": "1 muỗng cà phê"
+      },
+	  {
+        "name": "Bột gelatine",
+        "value": "15 Gr"
+      },
+	  {
+        "name": "Đường trắng",
+        "value": "130 Gr"
+      },
+	  {
+        "name": "Vani",
+        "value": "1 Ống"
+      },
+	  {
+        "name": "Bột rau cau dẻo",
+        "value": "1 Gói"
+      },
+	  {
+        "name": "Rượu ngoại",
+        "value": "200 ml"
       }
     ]
   }
