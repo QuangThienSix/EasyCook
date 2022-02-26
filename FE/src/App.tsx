@@ -16,7 +16,7 @@ import { NotFound } from "components/common";
 
 function App() {
 	const [textSearch, setTextSearch] = useState('');
-	const navigate = useNavigate ()
+	const navigate = useNavigate ();
   
 	const handleSearch = (event: any) => {
 		setTextSearch(event.target.value);
@@ -24,6 +24,12 @@ function App() {
 
 	const handleEnter = (event: any) => {
 		if(event.key === 'Enter' && textSearch !== ''){
+			navigate('/search/'+ textSearch);
+		}
+	}
+
+	const handleSearchText = () => {
+		if(textSearch !== ''){
 			navigate('/search/'+ textSearch);
 		}
 	}
@@ -40,7 +46,7 @@ function App() {
 		<div className="nav-middle flex-div">
 			<div className="search-box flex-div">
 				<input type="text" value={textSearch} onKeyPress={(event: any) => handleEnter(event)} onChange={(event: any) => handleSearch(event)} placeholder="Tìm kiếm món ăn" />
-				<a href="/Timkiem"><img src="images/search.png" alt="" className="search-icon" /></a>
+				<img src="images/search.png" onClick={() => handleSearchText()} alt="" className="search-icon" />
 			</div>
 		</div>
 		<div className="nav-right flex-div">
