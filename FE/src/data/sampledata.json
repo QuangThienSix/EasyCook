@@ -2,7 +2,7 @@
   {
     "recipeId": "0",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card1.jpg",
+    "urlImage": "images/card/card0.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "22300",
@@ -63,7 +63,7 @@
   {
     "recipeId": "1",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card2.jpg",
+    "urlImage": "images/card/card1.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200",
@@ -124,7 +124,7 @@
   {
     "recipeId": "2",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card3.jpg",
+    "urlImage": "images/card/card2.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -185,7 +185,7 @@
   {
     "recipeId": "3",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card4.jpg",
+    "urlImage": "images/card/card3.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -246,7 +246,7 @@
   {
     "recipeId": "4",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card5.jpg",
+    "urlImage": "images/card/card4.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -307,7 +307,7 @@
   {
     "recipeId": 5,
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card6.jpg",
+    "urlImage": "images/card/card5.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -368,7 +368,7 @@
   {
     "recipeId": "6",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card7.jpg",
+    "urlImage": "images/card/card6.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -429,7 +429,7 @@
   {
     "recipeId": "7",
     "nameRecipe": "Ức gà sốt cam",
-    "urlImage": "images/card/card8.jpg",
+    "urlImage": "images/card/card7.jpg",
     "avatarImage": "images/avatar.jpg",
     "clock": "20p",
     "numberViewted": "200000",
@@ -446,6 +446,160 @@
       {
         "name": "3",
         "value": "Lúc sốt kẹo lại cho thị gà đã chiên sẵn vào đảo đều lên, Cuối cùng cho thêm hành lá cắt nhỏ và mè rang vào chảo, đảo đều ra tắt bếp."
+      },
+      {
+        "name": "4",
+        "value": ""
+      }
+    ],
+    "resources": [
+      {
+        "name": "Ức gà",
+        "value": "300 Gr"
+      },
+      {
+        "name": "Nước ép cam",
+        "value": "100 ml"
+      },
+      {
+        "name": "Hành lá",
+        "value": "10 Grl"
+      },
+      {
+        "name": "Mè rang",
+        "value": "5 Gr"
+      },
+      {
+        "name": "Mật ong",
+        "value": "2 muỗng canh"
+      },
+      {
+        "name": "Nước tương",
+        "value": "1/2 muỗng canh"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Tiêu",
+        "value": "1/2 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "8",
+    "nameRecipe": "Cơm chiên dương châu",
+    "urlImage": "images/card/card8.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "30p",
+    "numberViewted": "86000",
+    "rating": "3",
+	"recipefor":["Món chính","Món ăn sáng"],
+	"typeOfDish":["Món chiên", "Món cơm"],
+	"seasons":["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+	"mealfor":"2",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": "Lột vỏ xúc xích và cắt hạt lựu. Bào vỏ khoai tây, cà rốt, rửa sạch và cũng cắt thành hạt lựu nhỏ. Cắt bỏ hai đầu đậu que, tước bỏ xơ, rửa sạch rồi cắt thành khúc nhỏ. Để riêng từng loại nguyên liệu. Bới cơm ra tô, dùng muỗng xới cho cơm tơi hạt."
+      },
+      {
+        "name": "2",
+        "value": "Làm nóng chảo, cho dầu ăn vào để dầu hơi sôi lăn tăn (nên cho nhiều dầu để khi chiên cơm không bị khô cứng lại nha), thả tỏi đập dập vào phi thơm. Đổ cơm đã xới tơi vào chảo, dùng xẻng đảo đều để cơm áo một lớp dầu ăn. Nêm 1 muỗng nước mắm vào chảo cơm, tách 2 quả trứng cho vào cơm (có thể dùng trứng gà, trứng vịt tùy khẩu vị nha). Đảo cơm thường xuyên cho cơm tơi ra. Chiên cơm đến khi thấy hạt cơm khô lại, rời ra, có một màu vàng đẹp mắt của trứng."
+      },
+      {
+        "name": "3",
+        "value": "Tắt bếp khi cơm đã chiên chín vàng, thơm lừng. Múc cơm chiên ra tô và để qua một bên. Giữ nguyên chảo, thêm dầu ăn vào đun nóng, thêm cà rốt vào xào trước cho chín (cà rốt rất lâu chín), sau đó thêm khoai tây, đâu que và xúc xích vào cuối cùng. Đảo cho tất cả nguyên liệu hòa đều vào nhau. Nêm muối, tiêu, bột ngọt cho vừa khẩu vị."
+      },
+      {
+        "name": "4",
+        "value": "Đổ cơm đã chiên vào chảo rau củ, dùng xẻng đảo thật đều cho cơm và nguyên liệu rau củ đều nhau. Chiên cơm thêm 2 - 5 phút nữa cho cơm nóng lại là tắt bếp được rồi đó. Múc cơm chiên dương châu ra dĩa, ăn kèm nước tương hay tương ớt đều ngon."
+      },
+	  {
+		"name":"5",
+		"value":"Dĩa cơm chiên dương châu hoàn thành với hương vị thơm lừng, nóng hôi hổi cùng màu sắc sặc sỡ vừa nhìn đã khiến bạn cảm thấy kích thích vị giác rồi đó. Cả nhà sẽ phải trầm trồ bởi hương vị thơm ngon của món cơm chiên dương châu. Đây cũng là cách để bạn tận dụng cơm còn dư và làm thành món ăn sáng bổ dưỡng, ngon lành cho mọi người vào ngày hôm sau nữa đấy. Nhanh tay cùng mình lưu lại ngay cách làm cơm chiên dương châu hấp dẫn này nhé."
+	  }
+    ],
+    "resources": [
+      {
+        "name": "Cơm",
+        "value": "1 Chén"
+      },
+      {
+        "name": "Xúc xích",
+        "value": "1 Cây"
+      },
+      {
+        "name": "Trứng gà",
+        "value": "2 Quả"
+      },
+      {
+        "name": "Khoai tây",
+        "value": "1 Củ"
+      },
+      {
+        "name": "Cà rốt",
+        "value": "1 Củ"
+      },
+      {
+        "name": "Đậu que",
+        "value": "100 Gr"
+      },
+      {
+        "name": "Dầu ăn",
+        "value": "2 muỗng cà phê"
+      },
+      {
+        "name": "Tỏi băm",
+        "value": "1/2 muỗng cà phê"
+      },
+	  {
+        "name": "Tỏi",
+        "value": "3 Tép"
+      },
+	  {
+        "name": "Muối",
+        "value": "1/2 muỗng cà phê"
+      },
+	  {
+        "name": "Bột ngọt",
+        "value": "1/2 muỗng cà phê"
+      },
+	  {
+        "name": "Tiêu",
+        "value": "1/4 muỗng cà phê"
+      },
+	  {
+        "name": "Nước mắm",
+        "value": "1 muỗng cà phê"
+      }
+    ]
+  },
+  {
+    "recipeId": "",
+    "nameRecipe": "",
+    "urlImage": "images/card/.jpg",
+    "avatarImage": "images/avatar.jpg",
+    "clock": "p",
+    "numberViewted": "200000",
+    "rating": "5",
+	"recipefor":"",
+	"typeOfDish":"",
+	"seasons":"",
+	"mealfor":"",
+    "tutorial": [
+      {
+        "name": "1",
+        "value": ""
+      },
+      {
+        "name": "2",
+        "value": ""
+      },
+      {
+        "name": "3",
+        "value": ""
       },
       {
         "name": "4",
