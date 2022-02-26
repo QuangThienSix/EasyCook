@@ -8,6 +8,10 @@ interface IRecipe {
   rating: number;
   resources: Resources[];
   tutorial: Resources[];
+  recipefor?: Array<string>;
+  typeOfDish?: Array<string>;
+  seasons?: Array<string>;
+  mealfor?: string,
 }
 interface Resources {
   name: string;
