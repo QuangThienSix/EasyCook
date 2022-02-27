@@ -12,6 +12,8 @@ interface IRecipe {
   typeOfDish?: Array<string>;
   seasons?: Array<string>;
   mealfor?: string,
+  likeUser: number,
+  likeUserSeen: number,
 }
 interface Resources {
   name: string;

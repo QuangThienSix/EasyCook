@@ -7,6 +7,8 @@
     "clock": "20p",
     "numberViewted": "22300",
     "rating": "5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -68,6 +70,8 @@
     "clock": "20p",
     "numberViewted": "200",
     "rating": "5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -129,6 +133,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -190,6 +196,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "2.5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -251,6 +259,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "4.6",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -312,6 +322,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "1.8",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -373,6 +385,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -434,6 +448,8 @@
     "clock": "20p",
     "numberViewted": "200000",
     "rating": "5",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -495,10 +511,12 @@
     "clock": "30p",
     "numberViewted": "86000",
     "rating": "3",
-	"recipefor":["Món chính","Món ăn sáng"],
-	"typeOfDish":["Món chiên", "Món cơm"],
-	"seasons":["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
-	"mealfor":"2",
+    "likeUser": 0,
+    "likeUserSeen": 0,
+    "recipefor": ["Món chính", "Món ăn sáng"],
+    "typeOfDish": ["Món chiên", "Món cơm"],
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "2",
     "tutorial": [
       {
         "name": "1",
@@ -516,10 +534,10 @@
         "name": "4",
         "value": "Đổ cơm đã chiên vào chảo rau củ, dùng xẻng đảo thật đều cho cơm và nguyên liệu rau củ đều nhau. Chiên cơm thêm 2 - 5 phút nữa cho cơm nóng lại là tắt bếp được rồi đó. Múc cơm chiên dương châu ra dĩa, ăn kèm nước tương hay tương ớt đều ngon."
       },
-	  {
-		"name":"5",
-		"value":"Dĩa cơm chiên dương châu hoàn thành với hương vị thơm lừng, nóng hôi hổi cùng màu sắc sặc sỡ vừa nhìn đã khiến bạn cảm thấy kích thích vị giác rồi đó. Cả nhà sẽ phải trầm trồ bởi hương vị thơm ngon của món cơm chiên dương châu. Đây cũng là cách để bạn tận dụng cơm còn dư và làm thành món ăn sáng bổ dưỡng, ngon lành cho mọi người vào ngày hôm sau nữa đấy. Nhanh tay cùng mình lưu lại ngay cách làm cơm chiên dương châu hấp dẫn này nhé."
-	  }
+      {
+        "name": "5",
+        "value": "Dĩa cơm chiên dương châu hoàn thành với hương vị thơm lừng, nóng hôi hổi cùng màu sắc sặc sỡ vừa nhìn đã khiến bạn cảm thấy kích thích vị giác rồi đó. Cả nhà sẽ phải trầm trồ bởi hương vị thơm ngon của món cơm chiên dương châu. Đây cũng là cách để bạn tận dụng cơm còn dư và làm thành món ăn sáng bổ dưỡng, ngon lành cho mọi người vào ngày hôm sau nữa đấy. Nhanh tay cùng mình lưu lại ngay cách làm cơm chiên dương châu hấp dẫn này nhé."
+      }
     ],
     "resources": [
       {
@@ -554,23 +572,23 @@
         "name": "Tỏi băm",
         "value": "1/2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Tỏi",
         "value": "3 Tép"
       },
-	  {
+      {
         "name": "Muối",
         "value": "1/2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Bột ngọt",
         "value": "1/2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Tiêu",
         "value": "1/4 muỗng cà phê"
       },
-	  {
+      {
         "name": "Nước mắm",
         "value": "1 muỗng cà phê"
       }
@@ -584,10 +602,12 @@
     "clock": "45p",
     "numberViewted": "72700",
     "rating": "4",
-	"recipefor":["Món chay","Món chính", "Món ăn sáng"],
-	"typeOfDish":["Chay","Bún - Mì - Phở"],
-	"seasons":["Mùa Xuân","Mùa Hè", "Mùa Thu", "Mùa Đông"],
-	"mealfor":"2",
+    "recipefor": ["Món chay", "Món chính", "Món ăn sáng"],
+    "typeOfDish": ["Chay", "Bún - Mì - Phở"],
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "2",
+    "likeUser": 0,
+    "likeUserSeen": 0,
     "tutorial": [
       {
         "name": "1",
@@ -605,10 +625,10 @@
         "name": "4",
         "value": "Sốt nấm ăn kèm bún chay Huế: Cho ít dầu ăn vào chảo, dầu nóng cho đầu hành boa rô băm nhỏ vào phi thơm rồi cho cà chua cắt hạt lựu vào xào, kế đó cho nấm rơm và ít nước vào, gia vị đậm đà um cho thấm, nấu đến khi nước còn sền sệt."
       },
-	  {
-		  "name":"5",
-		  "value":"Bày trí bún chay kiểu Huế: Múc sốt nấm ra tô. Cho bún đã trụng nóng vào tô, vài miếng thơm, đậu hũ, củ cải trắng. Rồi chan nước dùng lên tô bún, sau đó mới cho sốt nấm lên trên cùng, cho rau ngò gai, lá hành boa rô cắt nhỏ lên. Cách nấu bún chay thơm ngon nhưng lại đơn giản phải không nào? Cuối tuần rảnh rỗi, chị em hãy thử với cách nấu bún chay cực hấp dẫn này nhé."
-	  }
+      {
+        "name": "5",
+        "value": "Bày trí bún chay kiểu Huế: Múc sốt nấm ra tô. Cho bún đã trụng nóng vào tô, vài miếng thơm, đậu hũ, củ cải trắng. Rồi chan nước dùng lên tô bún, sau đó mới cho sốt nấm lên trên cùng, cho rau ngò gai, lá hành boa rô cắt nhỏ lên. Cách nấu bún chay thơm ngon nhưng lại đơn giản phải không nào? Cuối tuần rảnh rỗi, chị em hãy thử với cách nấu bún chay cực hấp dẫn này nhé."
+      }
     ],
     "resources": [
       {
@@ -643,23 +663,23 @@
         "name": "Sả",
         "value": "4 Cây"
       },
-	  {
+      {
         "name": "Hành boa rô",
         "value": "5 Cây"
       },
-	  {
+      {
         "name": "Hạt nêm chay",
         "value": "2 Muỗng cà phê"
       },
-	  {
+      {
         "name": "Đường phèn",
         "value": "1 Muỗng cà phê"
       },
-	  {
+      {
         "name": "Dầu điều",
         "value": "1/2 Muỗng cà phê"
       },
-	  {
+      {
         "name": "Bún tươi",
         "value": "500 Gr"
       }
@@ -673,10 +693,12 @@
     "clock": "30p",
     "numberViewted": "60000",
     "rating": "4",
-	"recipefor":["Thức uống"],
-	"typeOfDish":["Coffee"],
-	"seasons":["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
-	"mealfor":"1",
+    "recipefor": ["Thức uống"],
+    "typeOfDish": ["Coffee"],
+    "likeUser": 0,
+    "likeUserSeen": 0,
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "1",
     "tutorial": [
       {
         "name": "1",
@@ -722,10 +744,12 @@
     "clock": "20p",
     "numberViewted": "85200",
     "rating": "4",
-	"recipefor":["Món khai vị","Món Chính"],
-	"typeOfDish":["Salad"],
-	"seasons":["Mùa Xuân", "Mùa Thu"],
-	"mealfor":"2",
+    "recipefor": ["Món khai vị", "Món Chính"],
+    "typeOfDish": ["Salad"],
+    "likeUser": 0,
+    "likeUserSeen": 0,
+    "seasons": ["Mùa Xuân", "Mùa Thu"],
+    "mealfor": "2",
     "tutorial": [
       {
         "name": "1",
@@ -743,10 +767,10 @@
         "name": "4",
         "value": "Pha nước sốt trộn xà lách: 4 muỗng canh nước tương, 1.5 muỗng canh đường, 1 muỗng canh giấm gạo, 1 muỗng cà phê tỏi phi vàng, 1 muỗng cà phê ớt băm. Khuấy đều hỗn hợp cho đường tan và hòa quyện sau đó mới thêm vào 2 muỗng cà phê dầu olive rồi khuấy lên lần nữa. Nếm sốt trộn thấy có vị chua ngọt vừa ăn là được."
       },
-	  {
-		  "name":"5",
-		  "value":"Xếp xà lách ra đĩa, thêm thịt bò xào, trang trí cà chua thái lát và hành tây xung quanh rồi rưới đều nước sốt lên trên. Món xà lách trộn thanh mát, nước sốt trộn đậm đà với vị chua ngọt nhẹ, các loại rau kết hợp với thịt bò xào rất hài hòa, đặc biệt hành tây không hề bị hăng giúp tăng cảm giác ngon miệng lên rất nhiều."
-	  }
+      {
+        "name": "5",
+        "value": "Xếp xà lách ra đĩa, thêm thịt bò xào, trang trí cà chua thái lát và hành tây xung quanh rồi rưới đều nước sốt lên trên. Món xà lách trộn thanh mát, nước sốt trộn đậm đà với vị chua ngọt nhẹ, các loại rau kết hợp với thịt bò xào rất hài hòa, đặc biệt hành tây không hề bị hăng giúp tăng cảm giác ngon miệng lên rất nhiều."
+      }
     ],
     "resources": [
       {
@@ -781,39 +805,39 @@
         "name": "Tỏi phi",
         "value": "1 muỗng cà phê"
       },
-	  {
+      {
         "name": "Ớt băm",
         "value": "1 muỗng cà phê"
       },
-	  {
+      {
         "name": "Dầu ăn",
         "value": "1 muỗng cà phê"
       },
-	  {
+      {
         "name": "Dầu oliu",
         "value": "2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Nước tương Maggi",
         "value": "4 muỗng cà phê"
       },
-	  {
+      {
         "name": "Dầu hào Maggi",
         "value": "2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Đường trắng",
         "value": "3 muỗng cà phê"
       },
-	  {
+      {
         "name": "Giấm gạo",
         "value": "1 muỗng cà phê"
       },
-	  {
+      {
         "name": "Tiêu",
         "value": "1/2 muỗng cà phê"
       },
-	  {
+      {
         "name": "Muối",
         "value": "1/2 muỗng cà phê"
       }
@@ -827,10 +851,12 @@
     "clock": "50p",
     "numberViewted": "929100",
     "rating": "4",
-	"recipefor":["Món Lẩu","Món Chính"],
-	"typeOfDish":["Lẩu"],
-	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
-	"mealfor":"4",
+    "likeUser": 0,
+    "likeUserSeen": 0,
+    "recipefor": ["Món Lẩu", "Món Chính"],
+    "typeOfDish": ["Lẩu"],
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "4",
     "tutorial": [
       {
         "name": "1",
@@ -848,10 +874,10 @@
         "name": "4",
         "value": "Đổ nước cốt me, đậu hũ non, 2 muỗng canh sa tế, 1 muỗng canh nước mắm, 1 muỗng cà phê bột ngọt, 1 muỗng cà phê hạt nêm và ớt vào cho vừa ăn. Tắt bếp, bắc nồi lẩu xuống."
       },
-	  {
-		  "name":"5",
-		  "value":"Bày trí lẩu Thái chua cay: Cho tôm, nghêu, mực, rau muống, rau nhút... ra đĩa ăn cùng bún. Dùng bếp nhiệt điện hoặc bếp gas mini cho tiện ăn lẩu Thái nhé. Sau khi hoàn tất dọn ra mâm thì chỉ cần đun sôi nồi nước dùng lẩu thái, cho các nguyên liệu hải sản vào nấu sôi lại, thêm tiếp rau sống vào đun sôi trở lại là dùng được rồi đấy. Với cách làm lẩu Thái này, đảm bảo cả nhà sẽ có bữa ăn cuối tuần vô cùng hấp dẫn."
-	  }
+      {
+        "name": "5",
+        "value": "Bày trí lẩu Thái chua cay: Cho tôm, nghêu, mực, rau muống, rau nhút... ra đĩa ăn cùng bún. Dùng bếp nhiệt điện hoặc bếp gas mini cho tiện ăn lẩu Thái nhé. Sau khi hoàn tất dọn ra mâm thì chỉ cần đun sôi nồi nước dùng lẩu thái, cho các nguyên liệu hải sản vào nấu sôi lại, thêm tiếp rau sống vào đun sôi trở lại là dùng được rồi đấy. Với cách làm lẩu Thái này, đảm bảo cả nhà sẽ có bữa ăn cuối tuần vô cùng hấp dẫn."
+      }
     ],
     "resources": [
       {
@@ -866,7 +892,7 @@
         "name": "Mực",
         "value": "300 Gr"
       },
-	  {
+      {
         "name": "Nghêu",
         "value": "300 Gr"
       },
@@ -878,66 +904,66 @@
         "name": "Rua muống",
         "value": "200 Gr"
       },
-	  {
-		  "name":"Sả",
-		  "value":"4 Cây"
-	  },
-	  {
-		"name":"Me Chín",
-		"value":"100 Gr"
-	},
-	{
-		"name":"Cà chua",
-		"value":"2 Trái"
-	},
-	{
-		"name":"Sa tế",
-		"value":"2 Muỗng cà phê"
-	},
-	{
-		"name":"Dầu ăn",
-		"value":"2 muỗng cà phê"
-	},
-	{
-		"name":"Nước mắm",
-		"value":"1 muỗng cà phê"
-	},
-	{
-		"name":"Bột ngọt",
-		"value":"1 muỗng cà phê"
-	},
-	{
-		"name":"Hạt nêm",
-		"value":"1 muỗng cà phê"
-	},
-	{
-		"name":"Hành tây",
-		"value":"1 củ"
-	},
-	{
-		"name":"ớt",
-		"value":"5 Trái"
-	},
-	{
-		"name":"rau nhút",
-		"value":"200 Gr"
-	},
-	{
-		"name":"Hành lá",
-		"value":"100 Gr"
-	},
-	{
-		"name":"Bún tươi",
-		"value":"1 Kg"
-	},
-	{
-		"name":"Đậu hũ non",
-		"value":"2 miếng"
-	},
-	{
-		"name":"Sa tế",
-		"value":"2 muỗng cà phê"
-	}
+      {
+        "name": "Sả",
+        "value": "4 Cây"
+      },
+      {
+        "name": "Me Chín",
+        "value": "100 Gr"
+      },
+      {
+        "name": "Cà chua",
+        "value": "2 Trái"
+      },
+      {
+        "name": "Sa tế",
+        "value": "2 Muỗng cà phê"
+      },
+      {
+        "name": "Dầu ăn",
+        "value": "2 muỗng cà phê"
+      },
+      {
+        "name": "Nước mắm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Bột ngọt",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Hạt nêm",
+        "value": "1 muỗng cà phê"
+      },
+      {
+        "name": "Hành tây",
+        "value": "1 củ"
+      },
+      {
+        "name": "ớt",
+        "value": "5 Trái"
+      },
+      {
+        "name": "rau nhút",
+        "value": "200 Gr"
+      },
+      {
+        "name": "Hành lá",
+        "value": "100 Gr"
+      },
+      {
+        "name": "Bún tươi",
+        "value": "1 Kg"
+      },
+      {
+        "name": "Đậu hũ non",
+        "value": "2 miếng"
+      },
+      {
+        "name": "Sa tế",
+        "value": "2 muỗng cà phê"
+      }
     ]
   },
   {
@@ -948,10 +974,12 @@
     "clock": "20p",
     "numberViewted": "30200",
     "rating": "4",
-	"recipefor":["Món khai vị","Món Chính","Món ăn sáng"],
-	"typeOfDish":["Bánh mặn-Ngọt","Món Chiên"],
-	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
-	"mealfor":"2",
+    "likeUser": 0,
+    "likeUserSeen": 0,
+    "recipefor": ["Món khai vị", "Món Chính", "Món ăn sáng"],
+    "typeOfDish": ["Bánh mặn-Ngọt", "Món Chiên"],
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "2",
     "tutorial": [
       {
         "name": "1",
@@ -983,7 +1011,7 @@
         "name": "Hành tây",
         "value": "1 Củ"
       },
-	  {
+      {
         "name": "Trứng gà",
         "value": "2 Trái"
       },
@@ -995,10 +1023,10 @@
         "name": "Ngò rí",
         "value": "1 cây"
       },
-	  {
-		"name": "Bánh mì",
+      {
+        "name": "Bánh mì",
         "value": "2 ổ"
-	  }
+      }
     ]
   },
   {
@@ -1009,10 +1037,11 @@
     "clock": "40p",
     "numberViewted": "88200",
     "rating": "4",
-	"recipefor":["Món khai vị","Bánh - Bánh ngọt","Món tráng miệng"],
-	"typeOfDish":["Bánh mặn - Ngọt"],
-	"seasons":["Mùa Xuân", "Mùa Hè","Mùa Thu", "Mùa Đông"],
-	"mealfor":"2",
+    "likeUser": 0,
+    "recipefor": ["Món khai vị", "Bánh - Bánh ngọt", "Món tráng miệng"],
+    "typeOfDish": ["Bánh mặn - Ngọt"],
+    "seasons": ["Mùa Xuân", "Mùa Hè", "Mùa Thu", "Mùa Đông"],
+    "mealfor": "2",
     "tutorial": [
       {
         "name": "1",
@@ -1044,7 +1073,7 @@
         "name": "Đào hộp",
         "value": "500 Gr"
       },
-	  {
+      {
         "name": "Phô mai",
         "value": "600 Gr"
       },
@@ -1056,23 +1085,23 @@
         "name": "Vỏ chanh",
         "value": "1 muỗng cà phê"
       },
-	  {
+      {
         "name": "Bột gelatine",
         "value": "15 Gr"
       },
-	  {
+      {
         "name": "Đường trắng",
         "value": "130 Gr"
       },
-	  {
+      {
         "name": "Vani",
         "value": "1 Ống"
       },
-	  {
+      {
         "name": "Bột rau cau dẻo",
         "value": "1 Gói"
       },
-	  {
+      {
         "name": "Rượu ngoại",
         "value": "200 ml"
       }

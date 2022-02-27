@@ -1,57 +1,73 @@
-  .flex-div {
+.flex-div {
   display: flex;
   align-items: center;
 }
-  .food-card {
-	border-radius: 5px;
-	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-  }
-  .food-list .card {
-	width: 100%;
-	height: 160px;
-	border-radius: 5px;
-  }
-  .food-list .flex-div {
-	align-items: flex-start;
-	margin-top: 7px;
-  }
-  .food-list .flex-div img {
-	width: 35px;
-	margin-right: 10px;
-	border-radius: 50%;
-  }
-  .food-info {
-	color: #5a5a5a;
-	font-size: 13px;
-	text-transform: capitalize;
-  }
-  .food-info .view-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 2%;
-  }
-  .view-icon img.clock-icon,
-  .view-icon img.eye-icon {
-	width: 20px;
-  }
-  .view-icon p {
-	margin-right: 20px;
-	font-size: 15px;
-  }
-  .food-info a {
-	color: black;
-	font-weight: 700;
-	display: block;
-	margin-bottom: 5px;
-  }
-  .rating {
-	font-size: 30px;
-  }
-  a {
-	text-decoration: none;
-	color: #5a5a5a;
-  }
-  img {
-	cursor: pointer;
-  }
+.food-card {
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+.food-list .card {
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
+}
+.food-list .flex-div {
+  align-items: flex-start;
+  margin-top: 7px;
+}
+.food-list .flex-div img {
+  width: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.food-info {
+  color: #5a5a5a;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.food-info .view-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.view-icon img.clock-icon,
+.view-icon img.eye-icon {
+  width: 20px;
+}
+.view-icon p {
+  margin-right: 20px;
+  font-size: 15px;
+}
+.food-info a {
+  color: black;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+.rating {
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+img {
+  cursor: pointer;
+}
+
+.img__food-card {
+  position: relative;
+}
+.icon__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.icon__icon {
+  color: #fff !important;
+}
+.icon__icon:hover{
+  color: rgb(241, 8, 8) !important
+}

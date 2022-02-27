@@ -8,6 +8,8 @@ import Rating from "@mui/material/Rating";
 import ResourcesPage from "components/resources";
 import TutorialPage from "components/tutorial";
 import { Avatar, Button, TextField, Typography } from "@mui/material";
+import CarouselPage from "components/carousel";
+
 export default function DetailsRecipe(): JSX.Element {
   const dataTemp: Array<IRecipe> = require("../../data/sampledata.json");
   const { recipeId } = useParams<{ recipeId: string }>();
@@ -28,6 +30,8 @@ export default function DetailsRecipe(): JSX.Element {
     urlImage: "",
     resources: [],
     tutorial: [],
+    likeUser: 0,
+    likeUserSeen: 0,
   };
 
   const detailRecipe: IRecipe =
@@ -60,7 +64,6 @@ export default function DetailsRecipe(): JSX.Element {
           </div>
         </div>
       </div>
-
       <div className="name">
         <div className="time">
           <AccessTimeIcon />
@@ -77,7 +80,6 @@ export default function DetailsRecipe(): JSX.Element {
           <h5>{detailRecipe.numberViewted}</h5>
         </div>
       </div>
-
       <div className="resources">
         <div className="resource-list">
           <div className="content_left">
@@ -91,20 +93,17 @@ export default function DetailsRecipe(): JSX.Element {
           return <ResourcesPage key={resource.name} resources={resource} />;
         })}
       </div>
-
       <div className="tutorial">
         <h3 style={{ padding: "1rem 3rem" }}>Hướng dẫn</h3>
         {detailRecipe.tutorial.map((resource: Resources) => {
           return <TutorialPage key={resource.name} resources={resource} />;
         })}
       </div>
-
       <div className="evaluate">
         <h3 style={{ padding: "1rem 3rem" }}>
           Đánh giá (5) <Rating name="read-only" value={4} readOnly />
         </h3>
       </div>
-
       <div className="evaluate__ratting">
         <div className="avatar_lo">
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
@@ -155,6 +154,9 @@ export default function DetailsRecipe(): JSX.Element {
           </div>
         </div>
       ))}
+      <div className="carousel__list">
+        <CarouselPage Recipe={dataTemp} />
+      </div>
     </div>
   );
 }

@@ -9,6 +9,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import { CssBaseline } from "@mui/material";
 import { BrowserRouter } from "react-router-dom";
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";
 
 ReactDOM.render(
   <BrowserRouter>

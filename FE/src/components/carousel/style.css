@@ -1,0 +1,22 @@
+.carousel-demo .product-item .product-item-content {
+  border: 1px solid var(--surface-d);
+  border-radius: 3px;
+  margin: 0.3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.carousel-demo .product-item .product-image {
+  width: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.product-item .time_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-buttons span {
+  color: #3a9691;
+  font-size: 1.5rem;
+}
